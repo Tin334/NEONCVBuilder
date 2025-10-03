@@ -29,9 +29,11 @@ public class HtmlUtils {
 
         StringBuilder html = new StringBuilder();
         html.append("<!DOCTYPE html><html><head><meta charset='utf-8'><title>CV</title><style>")
-            .append("body{background:#000;color:#00ffff;font-family:Arial,sans-serif;padding:20px;}")
-            .append(".section{border:1px solid #00ffff;padding:20px;margin-bottom:20px;border-radius:10px;box-shadow:0 0 10px #00ffff;}")
-            .append("h2{color:#39ff14;} img{width:120px;height:120px;border-radius:50%;border:2px solid #00ffff;}")
+            .append("body{background:#ffffff;color:#000000;font-family:Arial,sans-serif;padding:20px;}")
+            .append(".section{border:2px solid #00ffff;padding:20px;margin-bottom:20px;border-radius:10px;")
+            .append("box-shadow:0 0 10px #00ffff;background-color:#f9f9f9;}")
+            .append("h2{color:#00aaff;} h3{color:#0077cc;} img{width:120px;height:120px;border-radius:50%;border:2px solid #00ffff;}")
+            .append("p, pre{font-size:14px;line-height:1.6;}")
             .append("</style></head><body>");
 
         html.append("<div class='section'><img src='").append(escape(avatarPath)).append("'><h2>")
